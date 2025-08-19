@@ -6,33 +6,12 @@
 //
 
 import SwiftUI
-import CoreGraphics
+
 struct ContentView: View {
     var body: some View {
-        VStack{
-            Button("Set Cursor Pos") {
-                setCursorPosition(x: 100, y: 100)
-            }
-        }
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
-
-
-
-func setCursorPosition(x: CGFloat, y: CGFloat) {
-    let point = CGPoint(x: x, y: y)
-    if let screen = NSScreen.main {
-        let screenRect = screen.frame
-        if screenRect.contains(point) {
-            CGWarpMouseCursorPosition(point)
-        } else {
-            print("Cursor position is outside the screen bounds")
-        }
-    } else {
-        print("Failed to get the main screen")
-    }
-}
-
 
 #Preview {
     ContentView()

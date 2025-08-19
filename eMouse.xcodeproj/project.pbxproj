@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C159F6E2E5400D0006BCEDD /* MacOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C159F6D2E5400D0006BCEDD /* MacOSView.swift */; };
 		0C9B6F702C85AFDA006B16AA /* eMouseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9B6F6F2C85AFDA006B16AA /* eMouseApp.swift */; };
 		0C9B6F722C85AFDA006B16AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9B6F712C85AFDA006B16AA /* ContentView.swift */; };
 		0C9B6F742C85AFDD006B16AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9B6F732C85AFDD006B16AA /* Assets.xcassets */; };
 		0C9B6F782C85AFDD006B16AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9B6F772C85AFDD006B16AA /* Preview Assets.xcassets */; };
-		0C9B6F812C8EBB67006B16AA /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9B6F802C8EBB67006B16AA /* SwiftUIView.swift */; };
+		0C9B6F812C8EBB67006B16AA /* iOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9B6F802C8EBB67006B16AA /* iOSView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C159F6D2E5400D0006BCEDD /* MacOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOSView.swift; sourceTree = "<group>"; };
 		0C9B6F6C2C85AFDA006B16AA /* eMouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eMouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9B6F6F2C85AFDA006B16AA /* eMouseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eMouseApp.swift; sourceTree = "<group>"; };
 		0C9B6F712C85AFDA006B16AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0C9B6F732C85AFDD006B16AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C9B6F752C85AFDD006B16AA /* eMouse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = eMouse.entitlements; sourceTree = "<group>"; };
 		0C9B6F772C85AFDD006B16AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0C9B6F802C8EBB67006B16AA /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		0C9B6F802C8EBB67006B16AA /* iOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,8 @@
 			children = (
 				0C9B6F6F2C85AFDA006B16AA /* eMouseApp.swift */,
 				0C9B6F712C85AFDA006B16AA /* ContentView.swift */,
-				0C9B6F802C8EBB67006B16AA /* SwiftUIView.swift */,
+				0C159F6D2E5400D0006BCEDD /* MacOSView.swift */,
+				0C9B6F802C8EBB67006B16AA /* iOSView.swift */,
 				0C9B6F732C85AFDD006B16AA /* Assets.xcassets */,
 				0C9B6F752C85AFDD006B16AA /* eMouse.entitlements */,
 				0C9B6F762C85AFDD006B16AA /* Preview Content */,
@@ -142,9 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C159F6E2E5400D0006BCEDD /* MacOSView.swift in Sources */,
 				0C9B6F722C85AFDA006B16AA /* ContentView.swift in Sources */,
 				0C9B6F702C85AFDA006B16AA /* eMouseApp.swift in Sources */,
-				0C9B6F812C8EBB67006B16AA /* SwiftUIView.swift in Sources */,
+				0C9B6F812C8EBB67006B16AA /* iOSView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +286,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -318,6 +323,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
